@@ -10,7 +10,7 @@
             while (flag)
             {
                 Console.WriteLine("Please enter an option");
-                Console.WriteLine("1:Create linked list\n2:Create linked list by adding");
+                Console.WriteLine("1:Create linked list\n2:Create linked list by adding\n3:Create linked list by Append ");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -26,6 +26,12 @@
                         linkedList.Display();
                         break;
                     case 3:
+                        linkedList.Append(56);
+                        linkedList.Append(30);
+                        linkedList.Append(70);
+                        linkedList.Display1();
+                        break;
+                    case 4:
                         flag = false;
                         break;
                     default:
