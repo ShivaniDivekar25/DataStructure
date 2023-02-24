@@ -93,5 +93,26 @@ namespace DataSrtructure
             this.head = this.head.next;
             Console.WriteLine("First element is deleted successfully");
         }
+        public void RemoveAtLast()
+        {
+            if(head == null)
+            {
+                Console.WriteLine("Linked list is empty");
+            }
+            if(head.next == null)
+            {
+                head = null;
+            }
+            else
+            {
+                Node lastNode = this.head;
+                while(lastNode.next.next != null)
+                {
+                    lastNode = lastNode.next;
+                }
+                lastNode.next = null;
+                Console.WriteLine("The last node is deleted successfully");
+            }
+        }
     }
 }
