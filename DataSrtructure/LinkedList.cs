@@ -126,5 +126,29 @@ namespace DataSrtructure
             temp.next = node;
             Console.WriteLine("Node {0} inserted after {1}.",data,afterNum);
         }
+        public void Search(int input)
+        {
+            bool isFound = false;
+            if(head == null)
+            {
+                Console.WriteLine("Linked list is empty");
+            }
+            else
+            {
+                Node temp = head;
+                while(temp != null)
+                {
+                    if(temp != null)
+                    {
+                        isFound = true;
+                        Console.WriteLine("Given node {0} is present.",input);
+                        break;
+                    }
+                    temp = temp.next;
+                }
+                if(!isFound)
+                    Console.WriteLine("Given node {0} is not present", input);
+            }
+        }
     }
 }
