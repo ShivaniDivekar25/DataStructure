@@ -10,7 +10,7 @@
             while (flag)
             {
                 Console.WriteLine("Please enter an option");
-                Console.WriteLine("1:Create linked list\n2:Create linked list by adding\n3:Create linked list by Append\n4:Remove first element in linked list\n5:Remove last element in linked list\n6:Insert node in linked list\n7:Search node in linked list");
+                Console.WriteLine("1:Create linked list\n2:Create linked list by adding\n3:Create linked list by Append\n4:Remove first element in linked list\n5:Remove last element in linked list\n6:Insert node in linked list\n7:Search node in linked list\n8:Insert after given node linked list");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -58,6 +58,13 @@
                         linkedList.Search(30);
                         break;
                     case 8:
+                        linkedList.Add(56);
+                        linkedList.Add(30);
+                        linkedList.InsertNode(40, 30);
+                        linkedList.Add(70);
+                        linkedList.Display();
+                        break;
+                    case 9:
                         flag = false;
                         break;
                     default:
