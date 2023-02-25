@@ -150,5 +150,29 @@ namespace DataSrtructure
                     Console.WriteLine("Given node {0} is not present", input);
             }
         }
+        public void RemoveAtGivenPosition()
+        {
+            Node temp1 = head;
+            Node temp2 = head;
+            if(head == null)
+            {
+                Console.WriteLine("The linked list is empty");
+            }
+            else
+            {
+                temp2.next.next = temp1.next.next.next;
+            }
+        }
+        public void Size()
+        {
+            Node temp = head;
+            int count = 0;
+            while(temp != null)
+            {
+                count++;
+                temp = temp.next;
+            }
+            Console.WriteLine("The size of linked list is: " + count);
+        }
     }
 }
