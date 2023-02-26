@@ -1,4 +1,6 @@
-﻿namespace DataSrtructure
+﻿using DataStructure;
+
+namespace DataSrtructure
 {
     internal class Program
     {
@@ -6,11 +8,12 @@
         {
             Console.WriteLine("Welcome to data structure programs");
             LinkedList linkedList = new LinkedList();
+            Stack stack = new Stack();
             bool flag = true;
             while (flag)
             {
                 Console.WriteLine("Please enter an option");
-                Console.WriteLine("1:Create linked list\n2:Create linked list by adding\n3:Create linked list by Append\n4:Remove first element in linked list\n5:Remove last element in linked list\n6:Insert node in linked list\n7:Search node in linked list\n8:Insert after given node linked list\n9:Remove at given position");
+                Console.WriteLine("1:Create linked list\n2:Create linked list by adding\n3:Create linked list by Append\n4:Remove first element in linked list\n5:Remove last element in linked list\n6:Insert node in linked list\n7:Search node in linked list\n8:Insert after given node linked list\n9:Remove at given position\n10:Create stack using Linked list");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -74,6 +77,12 @@
                         linkedList.Size();
                         break;
                     case 10:
+                        stack.Push(70);
+                        stack.Push(30);
+                        stack.Push(56);
+                        stack.Display();
+                        break;
+                    case 11:
                         flag = false;
                         break;
                     default:
