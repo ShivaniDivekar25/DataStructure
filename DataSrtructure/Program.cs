@@ -9,11 +9,12 @@ namespace DataSrtructure
             Console.WriteLine("Welcome to data structure programs");
             LinkedList linkedList = new LinkedList();
             Stack stack = new Stack();
+            Queue queue = new Queue();
             bool flag = true;
             while (flag)
             {
                 Console.WriteLine("Please enter an option");
-                Console.WriteLine("1:Create linked list\n2:Create linked list by adding\n3:Create linked list by Append\n4:Remove first element in linked list\n5:Remove last element in linked list\n6:Insert node in linked list\n7:Search node in linked list\n8:Insert after given node linked list\n9:Remove at given position\n10:Create stack using Linked list\n11:Create Peak and Pop method");
+                Console.WriteLine("1:Create linked list\n2:Create linked list by adding\n3:Create linked list by Append\n4:Remove first element in linked list\n5:Remove last element in linked list\n6:Insert node in linked list\n7:Search node in linked list\n8:Insert after given node linked list\n9:Remove at given position\n10:Create stack using Linked list\n11:Create Peak and Pop method\n12:Create queue using linked list");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -90,6 +91,12 @@ namespace DataSrtructure
                         stack.IsEmpty();
                         break;
                     case 12:
+                        queue.Enqueue(56);
+                        queue.Enqueue(30);
+                        queue.Enqueue(70);
+                        queue.Display();
+                        break;
+                    case 13:
                         flag = false;
                         break;
                     default:
