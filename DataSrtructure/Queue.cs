@@ -37,5 +37,12 @@ namespace DataStructure
                 temp = temp.next;
             }
         }
+        public void Dequeue()
+        {
+            if (head == null)
+                Console.WriteLine("No nodes are present in queue");
+            else
+                head = head.next;
+        }
     }
 }
